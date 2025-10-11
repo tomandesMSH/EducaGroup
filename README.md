@@ -14,4 +14,4 @@ EducaGroup je centrální hub propojující všechny moje projekty a weby. Najde
 
 - Novinky, jediná reálná část této stránky jsou novinky.
 - Kontakty - Falešné.
-- Hlavní stránka zobrazující všechny naše projekty.
+- Hlavní stránka zobrazující všechny moje projekty.
