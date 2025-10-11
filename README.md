@@ -6,9 +6,9 @@ EducaGroup je centrální hub propojující všechny moje projekty a weby. Najde
 
 | Název projektu | Popis | Odkaz |
 |----------------|-------|-------|
-| McDucanet Brno      | Stránka imitující fastfood restaurant. | [Navštívit](https://tomandesmsh.github.io/McDucanet-BRNO/) |
+| McDucanet Brno      | Stránka imitující fastfood restaurant. | [Navštívit](https://tomandesmsh.github.io/McDucanet-BRNO/) / [Repo](https://github.com/tomandesMSH/McDucanet-BRNO) |
 | ITDucanet Brno      | Stránka imitující IT poradenství. | (Zatím neexistuje) |
-| Vínocanet Brno      | Stránka imitující Vínárnu. | [Navštívit](https://tomandesmsh.github.io/Vinocanet-BRNO/) |
+| Vínocanet Brno      | Stránka imitující Vínárnu. | [Navštívit](https://tomandesmsh.github.io/Vinocanet-BRNO/) / [Repo](https://github.com/tomandesMSH/Vinocanet-BRNO) |
 
 ## Sekce na této stránce:
 
