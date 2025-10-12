@@ -101,7 +101,7 @@ footer {
 }
 
 footer a {
-    color: #f1c40f;
+    color: #00b7ff;
     text-decoration: none;
     margin: 0 8px;
     z-index: 1000;
@@ -138,8 +138,6 @@ footer .copy {
     font-size: 25px;
     color: cornflowerblue;
 }
-
-/* ---------- SIDEBARS S PLYNULÝM ROZBALENÍM ---------- */
 
 .sidebar {
     position: fixed;
@@ -262,4 +260,20 @@ footer .copy {
 .tlacitko:hover{
     transform: translateY(-2px);
 }
-                
+
+.sidebar-noanim {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: hidden;
+    will-change: width;
+    transition: width 350ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+}
