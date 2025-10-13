@@ -238,11 +238,11 @@ footer .copy {
 }
 
 .sidebar:hover .vertical-text {
-    transform: rotate(-90deg) translateX(450px);
+    transform: rotate(-90deg) translateX(425px);
 }
 
 .sidebar2:hover .vertical-text {
-    transform: rotate(-90deg) translateX(450px);
+    transform: rotate(-90deg) translateX(425px);
 }
 
 
