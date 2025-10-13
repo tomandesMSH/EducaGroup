@@ -3,6 +3,10 @@
   src: url("CorptaFREE.otf") format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -276,4 +280,19 @@ footer .copy {
     overflow: hidden;
     will-change: width;
     transition: width 350ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+}
+.nahoru {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0B66C3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.nahoru:hover {
+  background: #094f99;
 }
