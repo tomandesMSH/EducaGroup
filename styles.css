@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "CorptaFREE";
+  src: url("CorptaFREE.otf") format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.logo {
+    max-width: 150px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    text-align: center;
+    font-family: CorptaFREE;
+}
+
+h2 {
+    text-align:center;
+    font-family: sans-serif;
+}
+
+.content-boxes1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -50px;
+}
+
+.content-boxes1 a {
+    transition: transform 0.2s ease-in-out;
+}
+
+.content-boxes1 a:hover {
+    transform: scale(1.05);
+}
+
+.novinky {
+    display: flex;
+    width: 900px;
+    padding: 15px;
+    background: #f5f5f5;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.novinky:hover {
+    background-color: #dadada;
+}
+
+.novinky img {
+    border-radius: 15px;
+    display: flex;
+}
+
+.novinky p {
+    font-family: Arial, sans-serif;
+    color: #333;
+    gap: 10px;
+}
+
+.texty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.nazev {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.popis {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+footer {
+  position: relative;
+  z-index: 1001;   
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #00b7ff;
+    text-decoration: none;
+    margin: 0 8px;
+    z-index: 1000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .copy {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.translate {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.translate a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.15s;
+    font-family: "Google Sans Code", monospace;
+}
+
+.translate a:hover {
+    text-decoration: underline;
+    font-size: 25px;
+    color: cornflowerblue;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: hidden;
+    will-change: width;
+    transition: width 350ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+}
+
+.sidebar:hover {
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sidebar-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: opacity 280ms ease 60ms, transform 300ms cubic-bezier(.2,.9,.2,1) 60ms;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    pointer-events: none;
+}
+
+.sidebar:hover .sidebar-content {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.sidebar2 {
+   position: fixed;
+   right: 0;
+   top: 0;
+   height: 100vh;
+   width: 50px;
+   background-color: #f0f0f0;
+   border-left: 2px solid #000; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 999;
+   overflow: hidden;
+   will-change: width;
+   transition: width 350ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+}
+
+.sidebar2:hover {
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sidebar2-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(12px);
+    transition: opacity 280ms ease 60ms, transform 300ms cubic-bezier(.2,.9,.2,1) 60ms;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    pointer-events: none;
+}
+
+.sidebar2:hover .sidebar2-content {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* ---------- ANIMACE PRO TEXT "KONTAKTY" ---------- */
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    transition: transform 0.9s ease, translate 0.9s ease;
+}
+
+.sidebar:hover .vertical-text {
+    transform: rotate(-90deg) translateX(425px);
+}
+
+.sidebar2:hover .vertical-text {
+    transform: rotate(-90deg) translateX(425px);
+}
+
+
+.tlacitko{ 
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms; 
+    background: 200ms;
+}
+.tlacitko:hover{
+    transform: translateY(-2px);
+}
+
+.sidebar-noanim {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: hidden;
+    will-change: width;
+    transition: width 350ms cubic-bezier(.2,.9,.2,1), box-shadow 200ms;
+}
+.nahoru {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0B66C3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.nahoru:hover {
+  background: #094f99;
+}
+
+.button-13 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.button-13:hover {
+  background-color: #a6a8a8;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
